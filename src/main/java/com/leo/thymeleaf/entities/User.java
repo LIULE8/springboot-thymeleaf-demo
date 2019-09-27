@@ -19,7 +19,7 @@ public class User extends CommonEntity {
   private String name;
   private String gender;
   private Integer age;
-  @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
   @JoinColumn(name = "address_id")
   private Address address;
 }
