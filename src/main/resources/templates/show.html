@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot模版渲染</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+<!--/*@thymesVar id="uid" type="java.lang.String"*/-->
+<p th:text="'用户ID：' + ${uid}"></p>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<p th:text="'用户名称：' + ${name}"></p>
+</body>
+</html>

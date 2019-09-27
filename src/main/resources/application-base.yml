@@ -12,6 +12,10 @@ spring:
     sql-dialect: h2
   main:
     allow-bean-definition-overriding: true
+  #    thymeleaf配置
+  thymeleaf:
+    encoding: utf-8
+    prefix: classpath:/templates/
 
 # 启动可以看springboot启动的详细的log，用于排错使用
 # debug: true
