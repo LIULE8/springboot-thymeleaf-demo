@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: springboot-demo
+    name: springboot-thymeleaf-demo
   jpa:
     show-sql: true
     open-in-view: false
@@ -12,3 +12,5 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+# 启动可以看springboot启动的详细的log，用于排错使用
+#debug: true
