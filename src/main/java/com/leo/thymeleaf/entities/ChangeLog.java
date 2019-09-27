@@ -16,7 +16,7 @@ import java.time.ZonedDateTime;
 @Getter
 @Setter
 @MappedSuperclass
-public class ChangeLog implements Serializable {
+class ChangeLog implements Serializable {
   private static final long serialVersionUID = 5586802513361320816L;
   private String createBy;
   private String updateBy;

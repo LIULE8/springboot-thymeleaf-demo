@@ -13,7 +13,7 @@ import java.math.BigInteger;
 @Getter
 @Setter
 @MappedSuperclass
-public class CommonEntity extends ChangeLog {
+class CommonEntity extends ChangeLog {
   private static final long serialVersionUID = 4790352477881010187L;
 
   @Id

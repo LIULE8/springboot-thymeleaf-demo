@@ -4,8 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.math.BigInteger;
+import java.time.ZonedDateTime;
 
 /**
  * @author Leo Liu
@@ -20,5 +19,7 @@ public class User extends CommonEntity {
   private String name;
   private String gender;
   private Integer age;
+  @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  @JoinColumn(name = "address_id")
   private Address address;
 }
