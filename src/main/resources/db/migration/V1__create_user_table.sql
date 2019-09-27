@@ -5,6 +5,7 @@ create table t_user
     gender      varchar2(11),
     age         int(11),
     address_id   bigint,
+    version     int(11),
     create_by   varchar2(11),
     update_by   varchar2(11),
     create_time timestamp,
@@ -12,6 +13,6 @@ create table t_user
 );
 
 insert into t_user
-values (1, '张三', '男', 16, 1, 'Admin', 'Admin', systimestamp, systimestamp),
-       (2, '李四', '女', 19, 2, 'Admin', 'Admin', systimestamp, systimestamp),
-       (3, '王五', '男', 12, 3, 'Admin', 'Admin', systimestamp, systimestamp)
+values (1, '张三', '男', 16, 1, 0, 'Admin', 'Admin', systimestamp, systimestamp),
+       (2, '李四', '女', 19, 2, 0, 'Admin', 'Admin', systimestamp, systimestamp),
+       (3, '王五', '男', 12, 3, 0, 'Admin', 'Admin', systimestamp, systimestamp)

@@ -20,5 +20,5 @@ class CommonEntity extends ChangeLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private BigInteger id;
 
-  @Version private String version;
+  @Version private long version;
 }
