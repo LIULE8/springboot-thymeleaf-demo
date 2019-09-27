@@ -1,6 +1,5 @@
 package com.leo.thymeleaf.services;
 
-import com.leo.thymeleaf.entities.User;
 import com.leo.thymeleaf.params.UserParam;
 import com.leo.thymeleaf.results.UserResult;
 import org.springframework.data.domain.Page;
